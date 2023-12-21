@@ -25,10 +25,6 @@ Contributions to Bee Shorter are welcome! If you have any ideas, suggestions, or
 
 ## Contact
 
-If you have any questions or inquiries regarding Bee Shorter, you can reach out to the project maintainers by email at sheverando@wildy.id
+If you have any questions or inquiries regarding Bee Shorter, you can reach out to the project maintainers by email at hai@wildyrando.com
 
 Thank you for playing Bee Shorter and enjoy the game!
-
-## Demo
-
-for demo you can visit https://demo.wildy.id/bee-shorter/
