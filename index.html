@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bee Shorter</title>
+        <style>
+            body {
+                margin: 0;
+                background-image: url(assets/background.jpg);
+            }
+
+            .transparent-canvas {
+                display: block;
+                margin: 20px auto;
+                border: none;
+                background-color: white;
+                opacity: 0.8;
+                border-radius: 3%;
+                box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white;
+            }
+
+            .button {
+                border-radius: 5%;
+            }
+        </style>
+
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <div class="flex flex-col items-center justify-center h-screen">
+            <!-- Load shot audio -->
+            <audio id="shootSound" src="assets/tembak.mp3"></audio>
+
+            <!-- Load backsound -->
+            <audio id="backgroundSound" src="assets/backsound.mp3" loop></audio>
+
+            <!-- Load win audio -->
+            <audio id="winSound" src="assets/win.mp3"></audio>
+
+            <!-- load gameover audio -->
+            <audio id="gameOverSound" src="assets/gameover.mp3"></audio>
+
+            <!-- create canvas -->
+            <div class="transparent-canvas">
+                <canvas id="gameCanvas" width="800" height="600"></canvas>
+            </div>
+            <br><br>
+
+            <!-- button untuk start game -->
+            <button id="startButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hidden">Start Game</button>
+
+            <!-- button jika gameover -->
+            <button id="tryAgainButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hidden">Try Again</button>
+        </div>
+
+        <!-- load game script -->
+        <script src="script.js"></script>
+    </body>
+</html>
